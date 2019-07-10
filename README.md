@@ -11,6 +11,7 @@
 - [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/)
 
 ## 開発環境構築
+[Node.js](https://nodejs.org)をローカルPCにグローバルインストールし、当リポジトリをclone後に以下のコマンドを実行してください。
 
 ### 依存パッケージインストール
 ```bash
