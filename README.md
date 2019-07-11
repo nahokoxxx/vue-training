@@ -36,6 +36,10 @@ npm run serve
 "editor.formatOnSave": true
 ```
 
+### Google Chrome 拡張機能
+
+Chrome ウェブストアから[Vue.js devtool](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)をインストールしておくと検証ツール上で簡単にデバッグできます。
+
 ## 本番用ビルド
 
 ```bash
