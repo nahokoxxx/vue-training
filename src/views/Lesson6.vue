@@ -4,7 +4,9 @@
 
     <h2>レッスン</h2>
     <div class="info">
-      <div v-if="!imageUrl" class="info__image info__image--loading">Loading...</div>
+      <div v-if="!imageUrl" class="info__image info__image--loading">
+        Loading...
+      </div>
       <img v-else class="info__image" :src="imageUrl" />
       <div class="info__text">
         <p>
