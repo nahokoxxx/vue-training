@@ -5,6 +5,7 @@
       <router-link class="nav__link" to="/about">About</router-link>
       <router-link class="nav__link" to="/lesson1">Lesson1</router-link>
       <router-link class="nav__link" to="/lesson2">Lesson2</router-link>
+      <router-link class="nav__link" to="/lesson3">Lesson3</router-link>
     </div>
     <router-view />
   </div>
@@ -51,4 +52,3 @@ h1 {
   margin: 0 10px;
 }
 </style>
-

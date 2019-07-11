@@ -3,6 +3,7 @@ import Router from "vue-router";
 import Home from "./views/Home.vue";
 import Lesson1 from "./views/Lesson1.vue";
 import Lesson2 from "./views/Lesson2.vue";
+import Lesson3 from "./views/Lesson3.vue";
 
 Vue.use(Router);
 
@@ -33,6 +34,11 @@ export default new Router({
       path: "/lesson2",
       name: "lesson2",
       component: Lesson2
+    },
+    {
+      path: "/lesson3",
+      name: "lesson3",
+      component: Lesson3
     }
   ]
 });
