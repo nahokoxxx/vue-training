@@ -6,6 +6,7 @@ import Lesson2 from "./views/Lesson2.vue";
 import Lesson3 from "./views/Lesson3.vue";
 import Lesson4 from "./views/Lesson4.vue";
 import Lesson5 from "./views/Lesson5.vue";
+import Lesson6 from "./views/Lesson6.vue";
 
 Vue.use(Router);
 
@@ -51,6 +52,11 @@ export default new Router({
       path: "/lesson5",
       name: "lesson5",
       component: Lesson5
+    },
+    {
+      path: "/lesson6",
+      name: "lesson6",
+      component: Lesson6
     }
   ]
 });
