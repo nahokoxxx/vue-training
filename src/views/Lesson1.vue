@@ -59,7 +59,4 @@ export default {
   flex-direction: column;
   justify-content: center;
 }
-.line {
-  margin: 60px auto 40px;
-}
 </style>

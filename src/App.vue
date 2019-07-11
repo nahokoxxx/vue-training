@@ -6,6 +6,7 @@
       <router-link class="nav__link" to="/lesson1">Lesson1</router-link>
       <router-link class="nav__link" to="/lesson2">Lesson2</router-link>
       <router-link class="nav__link" to="/lesson3">Lesson3</router-link>
+      <router-link class="nav__link" to="/lesson4">Lesson4</router-link>
     </div>
     <router-view />
   </div>
@@ -38,7 +39,8 @@ h1 {
 }
 
 .line {
-  width: 200px;
+  margin: 50px auto;
+  width: 100px;
   height: 2px;
   border: none;
   background-color: #ddd;

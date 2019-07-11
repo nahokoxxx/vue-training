@@ -43,7 +43,7 @@
 
 <script>
 export default {
-  name: "lesson1",
+  name: "lesson2",
   data() {
     return {
       users: [
@@ -82,6 +82,7 @@ export default {
 <style scoped>
 .users {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   padding: 0;
 }
@@ -104,8 +105,5 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.line {
-  margin: 60px auto 40px;
 }
 </style>
