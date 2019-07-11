@@ -9,6 +9,7 @@
       <router-link class="nav__link" to="/lesson4">Lesson4</router-link>
       <router-link class="nav__link" to="/lesson5">Lesson5</router-link>
       <router-link class="nav__link" to="/lesson6">Lesson6</router-link>
+      <router-link class="nav__link" to="/lesson7">Lesson7</router-link>
     </div>
     <router-view />
   </div>

@@ -20,18 +20,9 @@
       </li>
     </ul>
 
-    <div class="form">
-      <!-- ↓これらの実装を編集 -->
-      Name:
-      <input type="input" class="input" v-model="inputName" />
-      Image URL:
-      <input type="input" class="input" />
-      Birthday:
-      <input type="input" class="input" />
-      <button class="button button--submit" @click="add">Add</button>
-    </div>
-
     <div class="buttons">
+      <button class="button">Add</button>
+      <!-- ↑この実装を編集 -->
       <button v-if="userExists" class="button button--secondary" @click="clear">
         Clear
       </button>
@@ -62,11 +53,10 @@ const initialUsers = [
   }
 ];
 export default {
-  name: "lesson4",
+  name: "lesson5",
   data() {
     return {
-      users: initialUsers,
-      inputName: ""
+      users: initialUsers
     };
   },
   computed: {
@@ -75,9 +65,7 @@ export default {
     }
   },
   methods: {
-    add() {
-      // ここに実装を追加
-    },
+    // ここに実装を追加
     clear() {
       this.users = [];
     },
@@ -138,10 +126,6 @@ export default {
 .button--secondary {
   color: #999;
 }
-.button--submit {
-  margin-top: 20px;
-  align-self: flex-end;
-}
 .button:hover {
   background-color: #42b983;
   color: #fff;
@@ -155,31 +139,10 @@ export default {
   background-color: #36495d;
   border-color: #36495d;
 }
-.button:focus,
-.input:focus {
+.button:focus {
   outline: 0;
 }
 .button + .button {
   margin-left: 10px;
-}
-.form {
-  margin: 50px auto;
-  display: flex;
-  flex-direction: column;
-  max-width: 600px;
-  text-align: left;
-}
-.input {
-  margin: 10px 0 20px;
-  border: none;
-  border-bottom: 2px solid #ddd;
-  font-size: 1rem;
-  font-weight: bold;
-  padding: 10px;
-  color: #36495d;
-  transition: 0.2s;
-}
-.input:focus {
-  border-color: #42b983;
 }
 </style>

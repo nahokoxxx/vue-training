@@ -87,7 +87,7 @@ export default {
   padding: 0;
 }
 .info {
-  margin: 0 10px;
+  margin: 10px;
   display: inline-flex;
   justify-content: center;
   background-color: #efefef;
