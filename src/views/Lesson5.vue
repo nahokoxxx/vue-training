@@ -32,7 +32,9 @@
     </div>
 
     <div class="buttons">
-      <button v-if="userExists" class="button button--secondary" @click="clear">Clear</button>
+      <button v-if="userExists" class="button button--secondary" @click="clear">
+        Clear
+      </button>
       <button v-else class="button" @click="reset">Restore</button>
     </div>
   </div>
