@@ -1,8 +1,9 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link class="nav__link" to="/">Home</router-link>
+      <router-link class="nav__link" to="/about">About</router-link>
+      <router-link class="nav__link" to="/lesson1">Lesson1</router-link>
     </div>
     <router-view />
   </div>
@@ -28,4 +29,20 @@
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+
+.line {
+  width: 200px;
+  height: 2px;
+  border: none;
+  background-color: #ddd;
+}
 </style>
+
+<style scoped>
+.nav__link + .nav__link::before {
+  content: "|";
+  color: #bbb;
+  margin: 0 10px;
+}
+</style>
+
