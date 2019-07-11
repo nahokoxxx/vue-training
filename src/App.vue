@@ -4,6 +4,7 @@
       <router-link class="nav__link" to="/">Home</router-link>
       <router-link class="nav__link" to="/about">About</router-link>
       <router-link class="nav__link" to="/lesson1">Lesson1</router-link>
+      <router-link class="nav__link" to="/lesson2">Lesson2</router-link>
     </div>
     <router-view />
   </div>
@@ -28,6 +29,11 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+h1 {
+  color: #42b983;
+  margin-bottom: 50px;
 }
 
 .line {

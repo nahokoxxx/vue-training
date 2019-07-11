@@ -2,8 +2,6 @@
   <div>
     <h1>Lesson1</h1>
 
-    <hr class="line" />
-
     <h2>サンプル</h2>
     <div class="info">
       <img class="info__image" :src="imageUrl" />
@@ -22,7 +20,9 @@
     <hr class="line" />
 
     <h2>レッスン</h2>
-    <div class="info"></div>
+    <div class="info">
+      <!-- ここに実装を追加 -->
+    </div>
   </div>
 </template>
 
@@ -53,7 +53,7 @@ export default {
   border-radius: 100%;
 }
 .info__text {
-  padding-left: 20px;
+  padding: 0 20px;
   text-align: left;
   display: flex;
   flex-direction: column;
