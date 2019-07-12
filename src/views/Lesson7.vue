@@ -14,8 +14,8 @@
           <b>{{ name || "Loading..." }}</b>
         </p>
         <p>
-          Birthday:
-          <b>{{ birthday || "Loading..." }}</b>
+          Followers Count:
+          <b>{{ followersCount || "Loading..." }}</b>
         </p>
       </div>
     </div>
@@ -29,7 +29,7 @@ export default {
     return {
       name: "",
       imageUrl: "",
-      birthday: ""
+      followersCount: ""
     };
   }
   // ここに実装を追加
