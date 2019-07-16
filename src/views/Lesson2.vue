@@ -4,7 +4,7 @@
 
     <h2>サンプル</h2>
     <ul class="users">
-      <li v-for="user in users" :key="user.name" class="info">
+      <li v-for="(user, index) in users" :key="index" class="info">
         <img class="info__image" :src="user.imageUrl" />
         <div class="info__text">
           <p>
@@ -34,7 +34,16 @@
             Birthday:
             <b>{{ user.birthday }}</b>
           </p>
-          <!-- ここに実装を追加 -->
+
+          <div>
+            <p v-if="user.hobbies.length > 1">Hobbies:</p>
+            <p v-else>Hobby:</p>
+            <ul>
+              <li v-for="(hobby, index) in user.hobbies" :key="index">
+                {{ hobby }}
+              </li>
+            </ul>
+          </div>
         </div>
       </li>
     </ul>
@@ -97,6 +106,7 @@ export default {
 .info__image {
   background-color: #fff;
   width: 140px;
+  height: 140px;
   border-radius: 100%;
 }
 .info__text {
@@ -104,6 +114,6 @@ export default {
   text-align: left;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 </style>

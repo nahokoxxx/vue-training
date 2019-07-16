@@ -23,8 +23,13 @@
 
     <h2>レッスン</h2>
     <div class="users">
-      <card v-for="user in users" :key="user.name"></card>
-      <!-- ↑この実装を編集 -->
+      <card
+        v-for="user in users"
+        :key="user.name"
+        :name="user.name"
+        :image-url="user.imageUrl"
+        :birthday="user.birthday"
+      ></card>
     </div>
   </div>
 </template>

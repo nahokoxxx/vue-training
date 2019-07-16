@@ -25,9 +25,9 @@
       Name:
       <input type="input" class="input" v-model="inputName" />
       Image URL:
-      <input type="input" class="input" />
+      <input type="input" class="input" v-model="inputImageUrl" />
       Birthday:
-      <input type="input" class="input" />
+      <input type="input" class="input" v-model="inputBirthday" />
       <button class="button button--submit" @click="add">Add</button>
     </div>
 
@@ -66,7 +66,9 @@ export default {
   data() {
     return {
       users: initialUsers,
-      inputName: ""
+      inputName: "",
+      inputImageUrl: "",
+      inputBirthday: ""
     };
   },
   computed: {
@@ -76,7 +78,16 @@ export default {
   },
   methods: {
     add() {
-      // ここに実装を追加
+      this.users.push({
+        name: this.inputName,
+        imageUrl: this.inputImageUrl,
+        birthday: this.inputBirthday
+      });
+
+      // フォームを初期化
+      this.inputName = "";
+      this.inputImageUrl = "";
+      this.inputBirthday = "";
     },
     clear() {
       this.users = [];
