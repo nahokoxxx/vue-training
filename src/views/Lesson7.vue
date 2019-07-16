@@ -23,6 +23,8 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   name: "lesson7",
   data() {
@@ -31,8 +33,16 @@ export default {
       imageUrl: "",
       followersCount: ""
     };
+  },
+  async created() {
+    const userName = "nahokomatsui";
+    const response = await axios.get(
+      `https://api.github.com/users/${userName}`
+    );
+    this.name = response.data.name;
+    this.imageUrl = response.data.avatar_url;
+    this.followersCount = response.data.followers;
   }
-  // ここに実装を追加
 };
 </script>
 
