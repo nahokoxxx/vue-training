@@ -18,7 +18,9 @@ export default {
   },
   mounted() {
     this.message = "Welcome!";
+  },
+  beforeDestroy() {
+    alert("Bye!");
   }
-  // ここに実装を追加
 };
 </script>

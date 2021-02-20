@@ -21,8 +21,7 @@
     </ul>
 
     <div class="buttons">
-      <button class="button">Add</button>
-      <!-- ↑この実装を編集 -->
+      <button class="button" @click="add">Add</button>
       <button v-if="userExists" class="button button--secondary" @click="clear">
         Clear
       </button>
@@ -65,7 +64,14 @@ export default {
     }
   },
   methods: {
-    // ここに実装を追加
+    add() {
+      this.users.push({
+        name: "Hiyoko",
+        imageUrl:
+          "https://1.bp.blogspot.com/-4N2T5W6jo_o/VCIiuUHNwEI/AAAAAAAAmeo/_lyIGo3afK4/s800/animal_hiyoko.png",
+        birthday: "2019/07/07"
+      });
+    },
     clear() {
       this.users = [];
     },
